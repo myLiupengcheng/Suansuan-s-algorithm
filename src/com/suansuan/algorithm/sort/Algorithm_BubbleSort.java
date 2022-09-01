@@ -58,10 +58,10 @@ public class Algorithm_BubbleSort {
 		if (array == null || array.length <= 1) {
 			return;
 		}
-		
+
 		// 外层循环控制整体的遍历次数，从最后开始，因为最后都是上次比较大的值。
 		for (int i = array.length - 1; i > 0; i--) {
-			
+
 			// 内层循环控制本次遍历将最大的值移动到最后一位。
 			for (int j = 0; j < i; j++) {
 				if (array[j] > array[j + 1]) {

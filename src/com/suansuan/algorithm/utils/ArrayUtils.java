@@ -1,7 +1,8 @@
 package com.suansuan.algorithm.utils;
 
 /**
- * 数据常用工具类型，算法必备。
+ * 算法数组必备工具-对数器
+ * 数据常用工具类型，算法必备。包含生成随机数组，以及判断当前的数组是否是有序的。
  * 
  * @since 2020-08-31
  * @author suansuanliu

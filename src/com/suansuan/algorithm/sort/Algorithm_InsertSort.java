@@ -23,7 +23,8 @@ import com.suansuan.algorithm.utils.ArrayUtils;
  * 内侧循环来控制后位置新来的数字，应该在什么位置，这里注意两个终止条件
  * 1、当新来的数字处于0位置时停止
  * 2、当新来的数字大于前面一个位置的时停止。
- *
+ * 
+ * 我们可以理解外循环给右走，内循环每次左走。
  * 
  * @since 2020-08-31
  * @author pengchengliu
@@ -40,6 +41,12 @@ public class Algorithm_InsertSort {
 		System.out.print("原始数组：");
 		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
 		insertSortWithFor(ArrayUtils.ARRAY);
+		System.out.print("排序数组：");
+		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
+		
+		System.out.print("原始数组：");
+		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
+		insertSortWithWhile(ArrayUtils.ARRAY);
 		System.out.print("排序数组：");
 		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
 	}

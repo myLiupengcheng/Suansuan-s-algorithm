@@ -41,11 +41,14 @@ public class Algorithm_BubbleSort {
 	 * @param args 启动该程序所传递过来的参数，可以是控制台输入。
 	 */
 	public static void main(String[] args) {
+		int[] array = ArrayUtils.createDisorderArray(20, 100);
 		System.out.print("原始数组：");
-		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
-		bubbleSort(ArrayUtils.ARRAY);
+		ArrayUtils.printlnArray(array);
+		System.out.println("原始数组是否有序：" + ArrayUtils.isOrderArray(array));
+		bubbleSort(array);
 		System.out.print("排序数组：");
-		ArrayUtils.printlnArray(ArrayUtils.ARRAY);
+		ArrayUtils.printlnArray(array);
+		System.out.println("排序后数组是否有序：" + ArrayUtils.isOrderArray(array));
 	}
 	
 	/**

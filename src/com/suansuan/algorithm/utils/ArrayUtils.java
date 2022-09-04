@@ -4,7 +4,7 @@ package com.suansuan.algorithm.utils;
  * 算法数组必备工具-对数器
  * 数据常用工具类型，算法必备。包含生成随机数组，以及判断当前的数组是否是有序的。
  * 
- * @since 2020-08-31
+ * @since 2022-08-31
  * @author suansuanliu
  *
  */
@@ -126,7 +126,7 @@ public class ArrayUtils {
 	 */
 	private static void testCretaeDisorderArray() {
 		for(int i = 0; i < 10; i++) {
-			int[] disorderArray = createDisorderArray(15, 100);
+			int[] disorderArray = createDisorderArray(10, 10);
 			printlnArray(disorderArray);
 		}
 	}

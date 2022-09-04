@@ -39,7 +39,7 @@ package com.suansuan.algorithm.probability;
  * 
  * 通过上述表格可以看出，当两次获取的值不相等的时候，得到的概率是相等的，通过该方式则可以让两次概率相等
  * 
- * @since 2020-09-02
+ * @since 2022-09-02
  * @author pengchengliu
  *
  */

@@ -5,7 +5,7 @@ package com.suansuan.algorithm.sum;
  * 例如，给定数字5，则为 1！+ 2！+ 3！+ 4！+ 5！
  * 例如，给定数字N，则为 1！+ 2！+ 3！+ 4！+ 5！+ ... + (N - 1)! + N!
  * 
- * @since 2020-09-01
+ * @since 2022-09-01
  * @author pengchengliu
  *
  */

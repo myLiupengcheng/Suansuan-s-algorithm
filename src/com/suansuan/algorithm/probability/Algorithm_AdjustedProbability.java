@@ -13,7 +13,7 @@ package com.suansuan.algorithm.probability;
  * 
  * 具体的实现思路如下所示：
  * 
- * @since 2020-09-01
+ * @since 2022-09-01
  * @author pengchengliu
  *
  */

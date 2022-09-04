@@ -12,7 +12,7 @@ import com.suansuan.algorithm.utils.ArrayUtils;
  *  1、直接简单全部遍历一次即可，暴力遍历一次，用一个变量记录要找的值，每次和新来的值做对比即可获取下标位置。
  *  2、这里的数组是有序的，可以利用这个条件，先从中间，然后比大小 再然后看是属于上半区还是下半区，以此类推。
  * 
- * @since 2020-09-03
+ * @since 2022-09-03
  * @author pengchengliu
  *
  */

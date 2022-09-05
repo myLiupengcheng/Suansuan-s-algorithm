@@ -101,7 +101,11 @@ public class Algorithm_ArrayIndexSummation {
 		int length = array.length;
 		int[] summationTempArray = new int[length];
 		for (int i = 0; i < length; i++) {
-			summationTempArray[i] = arrayIndexSummation01(array, 0, i);
+			int sum = 0;
+			for(int j = 0; j <= i ; j ++) {
+				sum+=array[j];
+			}
+			summationTempArray[i] = sum;
 		}
 		return summationTempArray;
 	}

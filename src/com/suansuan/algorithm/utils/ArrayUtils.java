@@ -47,6 +47,57 @@ public class ArrayUtils {
 	}
 	
 	/**
+	 * 判断当前数组的下标位置是否是该数组的局部最小值。
+	 *
+	 * @param array 需要判断的数组。
+	 * @param localMinimaIndex 需要判断数组当中的局部最小值的下标位置。
+	 * @return true 表示当前下标位置确实是该数组的局部最小值的位置。
+	 */
+	public static boolean isLocalMinimaForArrayIndex(int [] array, int localMinimaIndex) {
+		// 验证参数合法性		
+		if (array == null || array.length == 0) {
+			return localMinimaIndex == -1;
+		}
+		
+		if (array.length == 1) {
+			return localMinimaIndex == 0;
+		}
+		
+		int leftIndex = localMinimaIndex - 1;
+		int rightIndex = localMinimaIndex + 1;
+		
+		if (leftIndex < 0) {
+			return array[localMinimaIndex] < array[rightIndex];
+		} else if (rightIndex > array.length - 1) {
+			return array[localMinimaIndex] < array[leftIndex];
+		} else {
+			return array[localMinimaIndex] < array[rightIndex] && array[localMinimaIndex] < array[leftIndex];
+		}
+	}
+	
+	/**
+	 * 创建一个无序的随机数组，用来测试数组的局部最小值，所以生成的数组必须是无序且相邻两个数字之间不相等
+	 *
+	 * @param maxLength 无序随机数组最大的长度。
+	 * @param maxValue 无序随机数组中单个数值的最大值。
+	 * @return 返回无序且相邻两个数字之间不相等的数组。
+	 */
+	public static int[] createDisorderAndNotEqualArray(int maxLength, int maxValue) {
+		int arrayLength = (int) (Math.random() * maxLength);
+		int[] array = new int[arrayLength];
+		if (arrayLength <= 0) {
+			return array;
+		}
+		array[0] = (int) (Math.random() * maxValue);
+		for (int i = 1; i < arrayLength; i++) {
+			do {
+				array[i] = (int) (Math.random() * maxValue);
+			} while (array[i - 1] == array[i]);
+		}
+		return array;
+	}
+	
+	/**
 	 * 生成一个有序的数组，因为要生成有序的数组，所以关于数组的最大值就不会再做任何限制。
 	 * 
 	 * @param maxLength 无序随机数组最大的长度。
@@ -86,10 +137,16 @@ public class ArrayUtils {
 	 */
 	public static void printlnArray(int[] array) {
 		// 边界条件判断
-		if (array == null || array.length <= 0) {
-			System.out.println("打印数组为null或者长度为0");
+		if (array == null) {
+			System.out.println("null");
 			return;
 		}
+		
+		if (array.length <= 0) {
+			System.out.println("[ ]");
+			return;
+		}
+		
 		System.out.print("[");
 		for (int i = 0; i < array.length; i++) {
 			String arrayString = i == array.length - 1 ? array[i] + "" : array[i] + ", ";

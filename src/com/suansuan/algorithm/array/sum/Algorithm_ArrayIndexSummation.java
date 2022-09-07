@@ -1,6 +1,6 @@
-package com.suansuan.algorithm.sum;
+package com.suansuan.algorithm.array.sum;
 
-import com.suansuan.algorithm.utils.ArrayUtils;
+import com.suansuan.algorithm.array.ArrayUtils;
 
 /**
  * 数组求和类问题拓展，题目如下所示：

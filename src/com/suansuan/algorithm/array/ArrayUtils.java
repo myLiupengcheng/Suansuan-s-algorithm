@@ -1,4 +1,4 @@
-package com.suansuan.algorithm.utils;
+package com.suansuan.algorithm.array;
 
 /**
  * 算法数组必备工具-对数器

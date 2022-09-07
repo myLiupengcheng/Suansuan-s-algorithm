@@ -1,6 +1,6 @@
-package com.suansuan.algorithm.sort;
+package com.suansuan.algorithm.array.sort;
 
-import com.suansuan.algorithm.utils.ArrayUtils;
+import com.suansuan.algorithm.array.ArrayUtils;
 
 /**
  * 插入排序相关算法，其主要实现原理如下所示：

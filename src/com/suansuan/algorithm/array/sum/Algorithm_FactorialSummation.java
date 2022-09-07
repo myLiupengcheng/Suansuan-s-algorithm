@@ -1,4 +1,4 @@
-package com.suansuan.algorithm.sum;
+package com.suansuan.algorithm.array.sum;
 
 /**
  * 题目：给定一个数，求该数之前所有相邻的数阶乘总和。

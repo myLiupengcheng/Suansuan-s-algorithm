@@ -1,6 +1,6 @@
-package com.suansuan.algorithm.query;
+package com.suansuan.algorithm.array.query;
 
-import com.suansuan.algorithm.utils.ArrayUtils;
+import com.suansuan.algorithm.array.ArrayUtils;
 
 /**
  * 二分查找 局部最小数相关算法，题目如下所示：

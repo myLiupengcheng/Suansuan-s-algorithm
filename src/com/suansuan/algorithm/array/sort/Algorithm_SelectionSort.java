@@ -1,6 +1,6 @@
-package com.suansuan.algorithm.sort;
+package com.suansuan.algorithm.array.sort;
 
-import com.suansuan.algorithm.utils.ArrayUtils;
+import com.suansuan.algorithm.array.ArrayUtils;
 
 /**
  * 选择排序相关算法，主要使用原理如下所示： 

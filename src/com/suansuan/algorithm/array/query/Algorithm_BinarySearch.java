@@ -1,6 +1,6 @@
-package com.suansuan.algorithm.query;
+package com.suansuan.algorithm.array.query;
 
-import com.suansuan.algorithm.utils.ArrayUtils;
+import com.suansuan.algorithm.array.ArrayUtils;
 
 /**
  * 二分查找相关算法，二分查找相关算法主要涉及两个常用算法，具体题目如下所示：</br>

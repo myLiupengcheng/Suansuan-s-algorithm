@@ -1,6 +1,6 @@
 package com.suansuan.algorithm.linked;
 
-import com.suansuan.algorithm.linked.bean.SingleLinkedNode;
+import com.suansuan.algorithm.linked.bean.SingleNode;
 
 /**
  * 算法数组必备工具 - 链表的对数器
@@ -18,7 +18,7 @@ public class LinkedListUtils {
 	 * @param args 启动该程序所传递过来的参数，可以是控制台输入。
 	 */
 	public static void main(String[] args) {
-		SingleLinkedNode<Integer> HEAD = createDisorderSingleLinkedList(10,10);
+		SingleNode<Integer> HEAD = createDisorderSingleLinkedList(10,10);
 		System.out.println("======");
 		println(HEAD);
 	}
@@ -30,15 +30,13 @@ public class LinkedListUtils {
 	 * @param maxLength 整个链表的最大长度（由于长度随机，所以该链表的长度绝对不会超过这个数值）。
 	 * @return 一个无序的单链表，链表内部填充的是 Integer 类型的数字。一个无序的单链表，链表内部填充的是 Integer 类型的数字。
 	 */
-	public static SingleLinkedNode<Integer> createDisorderSingleLinkedList(int maxValue, int maxLength) {
+	public static SingleNode<Integer> createDisorderSingleLinkedList(int maxValue, int maxLength) {
 		int length = (int) (Math.random() * maxLength);
-		System.out.println("length = " + length);
-		SingleLinkedNode<Integer> header = new SingleLinkedNode<Integer>(null);
-		SingleLinkedNode<Integer> preNode = header;
+		SingleNode<Integer> header = new SingleNode<Integer>(null);
+		SingleNode<Integer> preNode = header;
 		for (int i = 0; i < length; i++) {
 			int result01 = (int) (Math.random() * maxValue);
-			SingleLinkedNode<Integer> currentNode = new SingleLinkedNode<Integer>(result01);
-			System.out.println("i = " + i + ", result = " + result01);
+			SingleNode<Integer> currentNode = new SingleNode<Integer>(result01);
 			preNode.setNext(currentNode);
 			preNode = currentNode;
 		}
@@ -51,7 +49,7 @@ public class LinkedListUtils {
 	 * 
 	 * @param array
 	 */
-	public static <T> void println(SingleLinkedNode<T> header) {
+	public static <T> void println(SingleNode<T> header) {
 		// 边界条件判断
 		if (header == null) {
 			System.out.println("null");

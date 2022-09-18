@@ -11,7 +11,7 @@ import com.suansuan.algorithm.linked.bean.base.Node;
  * @author pengchengliu
  *
  */
-public class SingleLinkedNode<T> extends Node {
+public class SingleNode<T> extends Node {
 	/**
 	 * 当前节点所表达的值类型。
 	 */
@@ -20,9 +20,9 @@ public class SingleLinkedNode<T> extends Node {
 	/**
 	 * 当前节点指向下一个节点的引用。如果当前节点为最后一个节点，则该节点为null
 	 */
-	public SingleLinkedNode<T> next;
+	public SingleNode<T> next;
 	
-	public SingleLinkedNode(T value) {
+	public SingleNode(T value) {
 		this.value = value;
 	}
 	
@@ -35,11 +35,11 @@ public class SingleLinkedNode<T> extends Node {
 		this.value = value;
 	}
 
-	public SingleLinkedNode<T> next() {
+	public SingleNode<T> next() {
 		return next;
 	}
 
-	public void setNext(SingleLinkedNode<T> next) {
+	public void setNext(SingleNode<T> next) {
 		this.next = next;
 	}
 

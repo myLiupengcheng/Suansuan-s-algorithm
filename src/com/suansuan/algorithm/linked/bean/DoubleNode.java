@@ -13,7 +13,7 @@ import com.suansuan.algorithm.linked.bean.base.Node;
  * @param <T> 当前所表达值的内容。
  *
  */
-public class DoubleLinkedNode<T> extends Node {
+public class DoubleNode<T> extends Node {
 	/**
 	 * 当前节点所表达的值类型。
 	 */
@@ -22,12 +22,12 @@ public class DoubleLinkedNode<T> extends Node {
 	/**
 	 * 当前节点指向下一个节点的引用。如果当前节点为最后一个节点，则该节点为null
 	 */
-	private DoubleLinkedNode<T> mNext;
+	private DoubleNode<T> mNext;
 	
 	/**
 	 * 当前节点指向上一个节点的引用。如果当前节点为第一个节点，则该节点为null
 	 */
-	private DoubleLinkedNode<T> mPrevious;
+	private DoubleNode<T> mPrevious;
 
 	public T getValue() {
 		return mValue;
@@ -37,19 +37,19 @@ public class DoubleLinkedNode<T> extends Node {
 		this.mValue = value;
 	}
 
-	public DoubleLinkedNode<T> getNext() {
+	public DoubleNode<T> getNext() {
 		return mNext;
 	}
 
-	public void setNext(DoubleLinkedNode<T> next) {
+	public void setNext(DoubleNode<T> next) {
 		this.mNext = next;
 	}
 
-	public DoubleLinkedNode<T> getPrevious() {
+	public DoubleNode<T> getPrevious() {
 		return mPrevious;
 	}
 
-	public void setPrevious(DoubleLinkedNode<T> previous) {
+	public void setPrevious(DoubleNode<T> previous) {
 		this.mPrevious = previous;
 	}
 
